@@ -1,0 +1,98 @@
+<script type="text/javascript">
+<!--
+var l_accessDenied="{$l_forbidden}";
+var l_quoteMsgAlert="{$l_quoteMsgAlert}";
+var tlength={$post_text_minlength};
+var anonPost={$anonPost};
+//-->
+</script>
+<script type="text/javascript" src="{$main_url}/templates/form.js"></script>
+
+<!--MAINTOPICSPAGE-->
+<table class="forums">
+<tr>
+<td class="icon"><img src="{$main_url}/img/forum_icons/{$forumIcon}" alt="{$forumName}" title="{$forumName}" class="forumIcon" /></td>
+<td class="caption3"><a href="{$main_url}/{$startIndex}" class="mnblnk">{$sitename}</a> /</td><td class="caption3 txtR noWrap">{$startNewTopicLink}</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="w100 vmTP vmBT"><h1 class="headingTitle">{$forumName}</h1></td>
+<td>&nbsp;</td>
+</tr>
+<!--pageNav-->
+<tr>
+<td>&nbsp;</td><td colspan="2">{$brtag}{$pageNav}{$brtag}{$brtag}</td>
+</tr>
+<!--/pageNav-->
+</table>
+
+{$specialThreads}
+{$list_topics}
+
+<!--pageNav-->
+{$brtag}
+<table class="tbTransparent">
+<tr><td class="txtC">{$pageNav}</td></tr>
+</table>
+<!--/pageNav-->
+
+{$brtag}
+
+<!--/MAINTOPICSPAGE-->
+
+<!--MAINTOPICFORM-->
+<form id="postMsg" name="postMsg" action="{$main_url}/{$indexphp}" method="post" class="formStyle">
+
+<!--MAINTOPICFORUMINPUT-->
+<table class="tbTransparent">
+<tr>
+<td><h1 class="headingTitle vmTP"><img src="{$main_url}/img/forum_icons/{$forumIcon}" class="forumIcon" alt="{$forumName}" title="{$forumName}" />&nbsp;{$forumName} &rarr; {$l_new_topic}</h1></td>
+</tr>
+</table>
+<!--/MAINTOPICFORUMINPUT-->
+
+<table class="tbTransparentmb">
+<tr>
+<td class="caption3"><h1 class="headingTitle vmTP vmBT">{$l_topicTitle}<a id="newtopic">&nbsp;</a></h1></td>
+</tr>
+<tr>
+<td class="tbTransparentCell txtL">
+<input type="text" name="topicTitle" size="38" maxlength="{$topic_max_length}" class="textForm topicTitle" tabindex="1" value="{$topicpTitle}" />
+</td>
+</tr>
+
+{$mainPostForm}
+
+<tr>
+<td>
+<script type="text/javascript">
+<!--
+document.write('<input type="button" name="subbut" value="{$l_sub_post_tpc}" class="inputButton" tabindex="5" onclick="submitForm();" />');
+//-->
+</script>
+
+<noscript><input type="submit" value="{$l_sub_post_tpc}" class="inputButton" tabindex="5" /></noscript>
+
+<!--MAINTOPICFORUMINPUT-->
+<input type="hidden" name="forum" value="{$forum}" />
+<!--/MAINTOPICFORUMINPUT-->
+<input type="hidden" name="action" value="ptopic" />
+</td>
+</tr>
+</table>
+
+</form>
+<!--/MAINTOPICFORM-->
+
+<!--MAINTOPICSPAGE-->
+
+{$brtag}
+{$forumsList}
+
+<script type="text/javascript">
+<!--
+if(document.forms['postMsg']) document.forms['postMsg'].elements['subbut'].disabled=false;
+//-->
+</script>
+
+<!--/MAINTOPICSPAGE-->

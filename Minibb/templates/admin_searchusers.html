@@ -1,0 +1,35 @@
+<table class="tbTransparentmb">
+<tr>
+<td class="tbTransparentCell">
+{$warning}{$sortOptions}
+{$brtag}{$brtag}
+<!--pageNav-->
+{$pageNav}&nbsp;
+{$brtag}{$brtag}
+<!--/pageNav-->
+<form action="{$main_url}/{$bb_admin}" method="get">
+<input type="hidden" name="action" value="searchusers2" />
+<input type="hidden" name="sort" value="{$sort}" />
+<input type="text" name="whatus" maxlength="30" class="textForm" value="{$whatus}" style="width:200px" />
+{$brtag}{$brtag}
+{$whatDropDown}
+{$brtag}{$brtag}
+<input type="submit" value="{$l_searchUsers}" class="inputButton" />
+{$brtag}{$brtag}
+</form>
+</td></tr>
+
+<tr><td class="tbTransparentCell">
+
+{$Results}
+
+</td></tr>
+
+<!--pageNav-->
+<tr><td class="tbTransparentCell">
+{$brtag}
+{$pageNav}&nbsp;
+</td>
+</tr>
+<!--/pageNav-->
+</table>

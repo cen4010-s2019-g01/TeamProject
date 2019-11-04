@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head><title>{$title}</title>
+{$l_meta}
+{$fontsCSS}
+<link href="{$main_url}/css/{$skin}.css" type="text/css" rel="stylesheet" />
+<style>
+.outer {
+display: table;
+position: absolute;
+height: 100%;
+width: 100%;
+}
+
+.middle {
+display: table-cell;
+vertical-align: middle;
+}
+
+.inner {
+margin-left: auto;
+margin-right: auto; 
+}
+</style>
+</head>
+
+<body class="gbody">
+
+<div class="outer">
+<div class="middle">
+<div class="inner">
+
+<form action="{$main_url}/{$indexphp}" method="post">
+
+<div align="center">
+<table width="40%" height="100%">
+<tr><td class="txtC">
+
+<span class="txtNr">{$l_forumProtected}:{$brtag}{$brtag}</span>
+
+<input type="password" maxlength="30" size="20" name="allForums" value="" class="textForm" />{$brtag}{$brtag}
+<input type="submit" value="{$l_submit}" class="inputButton" />
+<input type="hidden" name="queryStr" value="{$queryStr}" />
+{$brtag}{$brtag}
+
+
+</td></tr></table>
+
+</form>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

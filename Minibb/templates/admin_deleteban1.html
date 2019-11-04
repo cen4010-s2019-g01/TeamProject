@@ -1,0 +1,20 @@
+<table class="forumsmb">
+<tr>
+<td class="caption3"><!--desktop--><a href="{$main_url}/{$startIndex}" class="mnblnk">{$sitename}</a> / <!--/desktop-->{$l_unsetBan}</td>
+</tr>
+</table>
+
+<form action="{$main_url}/{$indexphp}" method="post" class="formStyle">
+<table class="tbTransparentmb">
+<tr>
+<td>
+{$bannedIPs}
+<input type="hidden" name="action" value="banip" />
+<input type="hidden" name="step" value="deleteban2" />
+{$brtag}
+<input type="submit" value="{$l_unsetBan}" class="inputButton" />
+<span class="txtSm">{$brtag}{$brtag}<a href="{$main_url}/{$indexphp}action=banip" class="mnblnk">{$l_ban}</a></span>
+</td>
+</tr>
+</table>
+</form>

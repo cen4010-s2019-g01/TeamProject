@@ -1,0 +1,29 @@
+<form action="{$main_url}/{$bb_admin}" method="post" class="formStyle">
+<table class="tbTransparentmb">
+<tr>
+<td class="tbTransparentCell">
+
+<h1 class="headingTitle">{$l_exportEmails}</h1>
+
+<span class="warning">{$warning}&nbsp;</span>
+{$brtag}
+{$l_usrInfo[4]} <input type="checkbox" name="expEmail" checked="checked" />
+{$l_usrInfo[1]} <input type="checkbox" name="expLogin" />
+{$brtag}{$brtag}
+{$l_separator}:
+{$brtag}
+{$l_comma} <input type="radio" name="separate" value="comma" checked="checked" />
+{$l_tab} <input type="radio" name="separate" value="tab" />
+{$brtag}{$brtag}
+{$l_screen} <input type="radio" name="screen" value="1" checked="checked" />
+{$l_attach} <input type="radio" name="screen" value="0" />
+<input type="hidden" name="action" value="exportemails2" />
+{$brtag}{$brtag}
+<input type="submit" value="{$l_exportEmails}" class="inputButton" />
+
+</td>
+</tr>
+</table>
+</form>
+
+{$brtag}{$brtag}

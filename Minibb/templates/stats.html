@@ -1,0 +1,51 @@
+<table class="forumsmb">
+<tr>
+<td class="caption3"><a href="{$main_url}/{$startIndex}" class="mnblnk">{$sitename}</a> / {$l_stats}</td>
+</tr>
+</table>
+
+<form action="{$main_url}/{$indexphp}" method="post" class="formStyle">
+
+<table class="forumsmb">
+<tr>
+<td class="tbClCp txtL" style="width:33%">{$l_stats_numUsers}: <strong>{$numUsers}</strong></td>
+<td class="tbClCp txtL" style="width:33%">{$l_stats_numTopics}: <strong>{$numTopics}</strong></td>
+<td class="tbClCp txtL" style="width:33%">{$l_stats_numPosts}: <strong>{$numPosts}</strong></td>
+</tr>
+<tr>
+<td colspan="3" class="tbClCp txtL">
+{$l_stats_admin} <a href="{$main_url}/{$indexphp}action=userinfo&amp;user=1"{$nof} class="mnblnk">{$adminInf}</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="tbClCp txtL">
+{$l_stats_lastReg} <a href="{$main_url}/{$indexphp}action=userinfo&amp;user={$lastRegUsr[0]}"{$nof} class="mnblnk">{$lastRegUsr[1]}</a>
+</td>
+</tr>
+</table>
+
+<table class="forumsmb">
+<tr class="caption5">
+<td><span class="txtNr">{$statsOpt}</span><span class="txtSm" style="padding-left:5px">{$statsTop}</span></td>
+</tr>
+
+<tr>
+<td class="caption5 txtC">{$list_stats_popular}{$list_stats_aUsers}{$list_stats_viewed}{$list_stats_forums}</td>
+</tr>
+
+<!--forLiveForum-->
+<tr>
+<td class="caption5">
+<span class="txtSm">{$l_days_within} <input type="text" size="4" maxlength="4" name="days" value="{$days}" class="textForm" /> {$l_days}</span> 
+<input type="submit" value="{$l_search[3]}" class="inputButton" />
+</td>
+</tr>
+<!--/forLiveForum-->
+
+</table>
+
+<input type="hidden" name="action" value="stats" />
+<input type="hidden" name="top" value="{$top}" />
+<input type="hidden" name="lst" value="{$lst}" />
+</form>

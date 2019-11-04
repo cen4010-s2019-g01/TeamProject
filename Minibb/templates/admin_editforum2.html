@@ -1,0 +1,106 @@
+<script type="text/javascript">
+<!--
+var check;
+function alertForumDelete(){
+if (!check || check==0) check = 1;
+else if (check == 1) check = 0;
+if (check == 1) {
+alert('{$l_forumDeleteAlert}');
+}
+}
+
+function paste_strinL(strinL){
+var input=document.forms["forumform"].elements["forum_icon"];
+input.value='';
+input.value=strinL;
+}
+
+function getCSRFCookie() {
+var name='{$cookiename}'+'_csrfchk';
+var start = document.cookie.indexOf(name + "=");
+var len = start + name.length +1;
+if ( ( !start ) && ( name != document.cookie.substring( 0, name.length ) ) ) return '';
+if ( start == -1 ) return '';
+var end = document.cookie.indexOf( ";", len );
+if ( end == -1 ) end = document.cookie.length;
+return unescape( document.cookie.substring( len, end ) );
+}
+
+function submitForm(){
+document.forms['forumform'].elements['csrfchk'].value=getCSRFCookie();
+document.forms['forumform'].submit();
+}
+
+//-->
+</script>
+
+<form name="forumform" action="{$main_url}/{$bb_admin}" method="post" class="formStyle">
+
+<table class="tbTransparentmb">
+<tr>
+<td>
+<h1 class="headingTitle">{$l_editforum}</h1>
+<span class="warning">{$warning}&nbsp;</span>
+</td></tr>
+
+<tr>
+<td class="tbTransparentCell prfW2 vTop">
+{$l_forumname}:
+{$brtag}
+<input type="text" name="forum_name" value="{$forum_name}" maxlength="150" class="textForm topicTitle" />{$brtag}{$brtag}
+</td>
+</tr>
+
+<tr>
+<td class="tbTransparentCell prfW2 vTop">
+{$l_forumdesc}:
+{$brtag}
+<textarea name="forum_desc" class="textForm postingForm">{$forum_desc}</textarea>{$brtag}{$brtag}
+</td>
+</tr>
+
+<tr>
+<td class="tbTransparentCell prfW2 vTop">
+{$l_forumIcon}:
+{$brtag}
+<input type="text" name="forum_icon" value="{$forum_icon}" maxlength="150" class="textForm topicTitle" />{$brtag}
+{$iconList}
+{$brtag}{$brtag}
+</td>
+</tr>
+
+<tr>
+<td class="tbTransparentCell prfW2 vTop">
+{$l_forumgroup}:
+{$brtag}
+<input type="text" name="forum_group" value="{$forum_group}" size="25" maxlength="150" class="textForm topicTitle" />{$brtag}{$brtag}
+</td>
+</tr>
+
+
+<tr>
+<td class="tbTransparentCell prfW2 vTop">{$l_deleteforum}{$brtag}<input type="checkbox" name="deleteforum" onclick="JavaScript:alertForumDelete();" />{$brtag}<span class="warning">{$l_noAsking}</span>{$brtag}{$l_forumDeleteAlert}&nbsp;</td>
+</tr>
+
+<tr>
+<td class="tbTransparentCell prfW2 vTop" colspan="2">
+{$brtag}
+<input type="button" value="{$l_editforum}" class="inputButton" onclick="JavaScript:submitForm();" /></td>
+</tr>
+
+</table>
+
+<input type="hidden" name="action" value="editforum3" />
+<input type="hidden" name="forumID" value="{$forumID}" />
+<input type="hidden" name="csrfchk" value="" />
+
+</form>
+
+<table class="tbTransparentmb">
+<tr><td class="caption1">
+<span class="txtNr"><b>{$l_fastforumspreview}</b>{$brtag}{$brtag}</span>
+{$forumsPreview}
+</td></tr></table>
+
+<a name="bottom"></a>
+{$brtag}

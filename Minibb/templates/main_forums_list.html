@@ -1,0 +1,12 @@
+<table class="tbTransparentmb"><tr><td class="tbTransparentCell">
+<form action="{$main_url}/{$indexphp}" method="get" class="formStyle">
+<input type="hidden" name="action" value="vtopic" />
+<select name="forum" class="selectTxt vmiddle" style="margin-bottom:3px"{$onforumchange}>
+{$listForums}
+</select>
+{$brtag}
+<input type="submit" value="{$l_chooseForum}" class="inputButton vmiddle" />
+</form>
+</td>
+<!--searchBox--><td class="txtR noWrap">{$searchBox}</td><!--/searchBox-->
+</tr></table>

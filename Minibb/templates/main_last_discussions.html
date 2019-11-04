@@ -1,0 +1,29 @@
+<table class="tbTransparentmb">
+<tr>
+<td class="tbTransparent txtL vmiddle" style="width:50%"><h1 class="headingTitle">{$l_lastDiscussions}</h1></td>
+<td class="tbTransparent txtR" style="width:50%;vertical-align:middle"><span class="txtSm">{$l_sortedBy}&nbsp;{$sortedByT}.{$brtag}<a href="{$main_url}/{$indexphp}sortBy={$sortByNew}" rel="nofollow" class="mnblnk">{$l_sortBy}&nbsp;{$sortByT}</a></span></td>
+</tr>
+</table>
+
+<table class="tbTransparent">
+<tr>
+<td class="rdficon"><img src="{$main_url}/img/p.gif" class="forumIcon" alt="" /></td>
+<td class="captionTop vTop" style="width:50%">{$l_topic} {$l_sepr} {$l_author}</td>
+<td class="captionTop vTop txtR" style="width:50%">{$l_views} {$l_sepr} {$l_replies} {$l_sepr} {$l_lastAuthor}</td>
+</tr>
+</table>
+
+{$specialThreads}
+{$list_topics}
+
+{$brtag}
+
+<!--pageNav-->
+<table class="tbTransparent">
+<tr>
+<td class="tbTransparentCell"><span class="txtSm">{$pageNavExtra}&nbsp;</span></td>
+<td class="tbTransparentCell txtR noWrap">{$searchBox}</td>
+</tr>
+</table>
+{$mbpn}
+<!--/pageNav-->

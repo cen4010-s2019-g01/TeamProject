@@ -1,0 +1,547 @@
+.gbody, table.forums, table.forumsmb, .tbTransparent, .tbTransparentmb, .txtNr, .txtSm, .navCell, .navCellSel, .selectTxt, .inputButton, .textForm, table.forumCol, .hl, .warning, .captionTop, td.tbClCp, .headingTitle {
+font-family: 'Roboto', Arial, Helvetica, 'Trebuchet MS', sans-serif, Geneva, 'Lucida Grande', Verdana, Tahoma, 'Lucida Sans Unicode';
+}
+
+EM, I{
+font-family: 'Roboto',  Georgia, 'Trebuchet MS', Geneva, Tahoma, Verdana, sans-serif, Arial, 'Lucida Sans Unicode', sans-serif;
+}
+
+table.forums, table.forumsmb, .tbTransparent, .tbTransparentmb{
+width:92%;
+max-width:1280px;
+}
+
+table.forumsmb, table.tbTransparentmb{
+margin-bottom:20px;
+}
+
+table.forumsmbmob, table.tbTransparentmbmob{
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.tbTransparent, .tbTransparentmb, .txtNr, .limbb, UL, .navCell, .navCellSel, .selectTxt, .inputButton, .textForm, td.caption1, td.caption3, td.tbClCp, td.caption5, .groupTitle, .caption2, td.forumTitle, .username, .postedText, td.pauthor, .hl, .warning, td.capMenu, td.author, td.latest, .captionTop {
+font-size:16px;
+}
+
+.txtSm, .quote, .fdesc, .fdescNum{
+font-size:14px;
+}
+
+.txtSsm{
+font-size:12px;
+}
+
+.headingTitle{
+font-size:22px;
+}
+
+.tbTransparentCell, .limbb, UL, td.caption1, td.caption3, td.tbClCp, td.caption5, td.author, td.latest, td.forumTitle, .postedText, td.pauthor, .warning, .warningLnk, .tcell {
+line-height:24px;
+}
+
+.prfW1{
+width:25%;
+}
+.prfW2{
+width:75%;
+}
+.prfFld{
+width:250px;
+}
+
+/* Colors */
+
+.gbody{
+background-color:#F9F7F2;
+color:#000000;
+}
+
+.txtSm, .txtSsm, .views, .fdescNum, .quote, .quoting, .captionTop{
+text-decoration:none;
+color:#707070;
+}
+
+.selectTxt, .textForm {
+background:#FFFFFF;
+}
+
+.tbCel1 {
+background-color:#FEFFF9;
+}
+
+.tbCel2{
+background-color:#F6F8ED;
+}
+
+.warning{
+color:#FF0000;
+}
+
+/* color 1 */
+
+A.mnblnk:link, A.mnblnk:active, A.mnblnk:visited, A.mnblnk:hover, A.txtSm:link, A.txtSm:active, A.txtSm:visited, .capMenu A:link, .capMenu A:visited, .capMenu A:active, .groupTitle A:link, .groupTitle A:active, .groupTitle A:visited, .postedText A:link, .postedText A:active, .postedText A:visited, .postedText A:hover, .fdesc A:link, .fdesc A:active, .fdesc A:visited, .fdesc A:hover, .headingTitle, .groupTitle, .inputButton, td.caption3, .sepr, .replies {
+color:#775454;
+}
+
+/* color 2 */
+
+.inputButton, .textForm, .navCell, .navCellSel, td.capMenu, .scroll-to-top{
+border:1px solid #B7D395;
+}
+
+.inputButton:hover {
+background-color:#B7D395;
+}
+
+.hl{
+border-left:7px solid #B7D395;
+}
+
+.tcelllast /*, .tbStBar */{
+border-bottom:1px solid #B7D395;
+}
+
+/*
+.tbStBar{
+border-right:1px solid #B7D395;
+}
+*/
+
+/* color 3 */
+
+.postedTextCell, .postedTextCellLeft {
+border-left:1px #DDDDDD solid;
+}
+
+.postedTextCell, .postedTextCellRight {
+border-right:1px #DDDDDD solid;
+}
+
+.hl, .scroll-to-top, .pages{
+background-color:#DDDDDD;
+}
+
+td.tbClCp {
+border:1px #B7D395 solid;
+}
+
+/* color 4 */
+
+.groupTitle, td.capMenu, .inputButton {
+background-color:#FFE25B;
+}
+
+.quote{
+border-left:7px solid #FFE25B;
+}
+
+.headingTitle, .scroll-to-top{
+text-shadow:#FFE25B 1px 1px 1px;
+}
+
+.tbStBar{
+border/*-top*/:1px solid #B7D395;
+}
+
+/* color 5 */
+
+A.username:hover, A.groupTitle:hover, .capMenu A:hover, .tbStBar, td.forumTitle, td.tbClCp, .navCell, .quote, .sayings {
+background-color:#FFEBC8/*F8EFE0*/;
+}
+
+/******************/
+
+A.username:hover, A.groupTitle:hover, .capMenu A:hover, .postedText A:hover, .fdesc A:hover, .tbStBar{
+text-decoration:none;
+}
+
+A.mnblnk:link, A.mnblnk:active, A.mnblnk:hover {
+text-decoration:underline;
+}
+
+A.mnblnk:visited{
+text-decoration:none;
+}
+
+A.mnblnkn:link, A.mnblnk:active, A.mnblnk:visited, A.mnblnk:hover, .capMenu A:link, .capMenu A:visited, .capMenu A:active, .capMenu A:hover {
+text-decoration:none;
+}
+
+.postedText A:link, .postedText A:active, .postedText A:visited, .postedText A:hover{
+font-weight:bold;
+}
+
+.groupTitle{
+font-weight:bold;
+padding:5px;
+}
+
+.groupTitle A:link, .groupTitle A:active, .groupTitle A:visited{
+font-weight:bold;
+}
+
+.navCell, .navCellSel, .textForm, .inputButton, .tbStBar, .scroll-to-top {
+border-radius:3px;
+}
+
+.navCellSel{
+background-color:transparent;
+}
+
+/******************/
+
+* {margin:0;padding:0;}
+
+.popUp{
+padding:4px;
+}
+
+.fPopUp{
+margin:0px;
+overflow:hidden;
+}
+
+.popUp img, .postedText img, .fPopUp img{
+max-width:100%;
+}
+
+.formStyle{
+margin: 0px;
+}
+
+td{
+text-align:left;
+}
+
+img {
+border:0px;
+}
+
+abbr{
+text-decoration:none;
+}
+
+.gbody{
+margin-top:0px;
+margin-bottom:10px;
+margin-right:0px;
+margin-left:0px;
+}
+
+.navCell, .navCellSel{
+padding-left:3px;
+padding-right:3px;
+padding-top:1px;
+padding-bottom:1px;
+margin-top:2px;
+}
+
+.warning{
+font-weight:bold;
+padding-top:11px;
+padding-bottom:11px;
+}
+
+table.forums, table.forumsmb {
+display:table;
+border-collapse:collapse;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+} 
+
+.tbTransparent, .tbTransparentmb{
+border-collapse:collapse;
+background:transparent;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+vertical-align:top;
+}
+
+.tbTransparentCell{
+text-align:left;
+vertical-align:top;
+}
+
+table.clps{
+border-collapse:separate;
+}
+
+table.forumCol{
+display:table;
+width:100%;
+text-align:left;
+border-collapse:collapse;
+}
+
+.txtNr{
+text-decoration:none;
+}
+
+.limbb, UL, OL{
+padding-left:13px;
+margin:2px;
+}
+
+UL{
+list-style:circle;
+}
+
+.inputButton {
+padding:2px 6px 3px 6px;
+text-align:center;
+position:relative;
+vertical-align:baseline;
+cursor: pointer;
+}
+
+.textForm {
+padding:2px;
+}
+
+td.caption1 {
+padding-bottom:1px;
+padding-left:5px;
+padding-right:5px;
+padding-top:5px;
+text-align:left;
+}
+
+td.caption3{
+width:100%;
+font-weight:bold;
+padding:3px;
+}
+
+td.icon{
+padding:5px;
+text-align:center;
+vertical-align:middle;
+width:20px;
+height:20px;
+}
+
+.noWrap{
+white-space:nowrap;
+}
+
+td.tbClCp, td.caption5 {
+padding:5px;
+}
+
+td.caption5 {
+padding-bottom:6px;
+}
+
+.headingTitle{
+font-weight:bold;
+/* margin-top:13px;
+margin-bottom:13px; */
+}
+
+td.rdficon{
+text-align:center;
+vertical-align:middle;
+padding-right:3px;
+padding-left:3px;
+border:0px;
+}
+
+td.forumTitle, td.captionTitle{
+padding:5px;
+}
+
+.fdesc, .fdescNum{
+padding:3px;
+padding-bottom:10px;
+line-height:20px;
+vertical-align:top;
+}
+
+.username{
+font-weight:bold;
+}
+
+.postedText{
+padding-top:13px;
+padding-bottom:13px;
+}
+
+.postedLeftCell{
+vertical-align:top;
+padding-left:5px;
+padding-top:29px;
+}
+
+td.pauthor{
+padding-bottom:1px;
+padding-left:5px;
+padding-right:5px;
+padding-top:27px;
+vertical-align:top;
+}
+
+.quote{
+margin-left:7px;
+padding:3px;
+width:90%;
+}
+
+.quoting{
+font-weight:bold;
+border-top:0px;
+margin-left:5px;
+width:90%;
+}
+
+.hl{
+margin-left:7px;
+padding:4px;
+width:90%;
+}
+
+#newreply:hover, #newtopic:hover{
+text-decoration:none;
+background-color:transparent;
+}
+
+.postingForm, .topicTitle{
+width:99%;
+}
+
+.postingForm{
+height:250px;
+margin-bottom:3px;
+}
+
+.tbStBar, td.caption5 td{
+padding:2px;
+padding-left:5px;
+}
+
+.tbStBar{
+margin:2px;
+}
+
+td.capMenu{
+padding:4px;
+vertical-align:middle;
+white-space:nowrap;
+line-height:24px;
+}
+
+.captionTop{
+padding:5px;
+}
+
+.tcell{
+padding-top:13px;
+padding-left:5px;
+padding-right:4px;
+padding-bottom:2px;
+}
+
+.tcelllast{
+padding-top:7px;
+padding-bottom:7px;
+}
+
+.tcellpn{
+padding-left:25px;
+}
+
+.fcell{
+padding-top:5px;
+padding-left:5px;
+padding-right:4px;
+padding-bottom:2px;
+}
+
+.replies{
+font-weight:bold;
+}
+
+abbr.accr{
+border-bottom-width:0px;
+}
+
+.subjectPad{
+padding-top:4px;
+padding-bottom:4px;
+}
+
+.pformBottom{
+padding-bottom:13px;
+}
+
+.vTop{
+vertical-align:top;
+}
+
+.vmiddle{
+vertical-align:middle;
+}
+
+td.txtC{
+text-align:center;
+}
+
+td.txtL{
+text-align:left;
+}
+
+td.txtR{
+text-align:right;
+}
+
+img.forumIcon{
+width:16px;
+height:16px;
+vertical-align:middle;
+border:0px;
+}
+
+img.authorIcon{
+width:12px;
+height:9px;
+vertical-align:middle;
+border:0px;
+}
+
+table.searchmb{
+margin-bottom:5px;
+}
+
+.scroll-to-top {
+position:fixed;
+left:50%;
+width:30px;
+bottom:13px;
+display:none;
+overflow:hidden;
+cursor:pointer;
+text-align:center;
+vertical-align:middle;
+padding:3px;
+padding-left:5px;
+padding-right:5px;
+margin-left: -15px;
+}
+
+.w100{
+width:100%;
+}
+
+.vmTP{
+padding-top:10px;
+}
+
+.vmBT{
+padding-bottom:10px;
+}
+
+wbr:after {
+content: "\00200B";
+}

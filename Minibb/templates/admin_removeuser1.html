@@ -1,0 +1,62 @@
+<script type="text/javascript">
+<!--
+function getCSRFCookie() {
+var name='{$cookiename}'+'_csrfchk';
+var start = document.cookie.indexOf(name + "=");
+var len = start + name.length +1;
+if ( ( !start ) && ( name != document.cookie.substring( 0, name.length ) ) ) return '';
+if ( start == -1 ) return '';
+var end = document.cookie.indexOf( ";", len );
+if ( end == -1 ) end = document.cookie.length;
+return unescape( document.cookie.substring( len, end ) );
+}
+
+function submitForm(){
+document.forms['removeform'].elements['csrfchk'].value=getCSRFCookie();
+document.forms['removeform'].submit();
+}
+
+//-->
+</script>
+
+<form action="{$main_url}/{$indexphp}" method="post" class="formStyle" id="removeform" name="removeform">
+
+<table class="tbTransparentmb">
+
+<tr>
+<td class="tbTransparentCell txtNr noWrap subjectPad">&nbsp;</td>
+<td><span class="warning">{$l_removeUser}:</span>{$brtag}{$brtag}<input type="text" size="7" maxlength="11" name="user" class="textForm" value="{$user}" placeholder="{$l_enterID}" {$editable_id} /><strong>&nbsp;{$uname}{$brtag}{$brtag}</strong>
+</td>
+</tr>
+
+<tr>
+<td class="vmiddle txtR subjectPad tbCel1 noWrap"><input type="checkbox" name="removemessages" value="1" checked="checked" style="margin:7px" /></td>
+<td class="txtSm tbCel1">{$l_removeUserMessages}</td>
+</tr>
+
+<tr>
+<td class="vmiddle txtR subjectPad tbCel2 noWrap"><input type="checkbox" name="keepblocked" value="1" checked="checked" style="margin:7px" /></td>
+<td class="txtSm tbCel2">{$l_justLockProfile}</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="warning">
+<b>{$l_noAsking}</b>
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>
+<input type="button" value="{$l_removeUser}" class="inputButton" onclick="submitForm();" />
+</td>
+</tr>
+
+</table>
+
+<input type="hidden" name="csrfchk" value="" />
+<input type="hidden" name="action" value="removeuser" />
+<input type="hidden" name="step" value="remove" />
+{$user_field}
+</form>
